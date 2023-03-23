@@ -8,7 +8,7 @@ import io
 import pymerkle
 
 
-URL = "https://github.com/fmerg/pymerkle"
+URL = "https://github.com/magidandrew/pymerkle"
 
 current_dir = os.path.abspath(os.path.dirname(__file__))
 
