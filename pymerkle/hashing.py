@@ -60,7 +60,7 @@ class HashEngine:
         :rtype: bytes
         """
         if self.algorithm == 'keccak256':
-            hasher = keccak_256
+            hasher = keccak_256()
         else:
             hasher = getattr(hashlib, self.algorithm)()
 
