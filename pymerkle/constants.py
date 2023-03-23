@@ -16,4 +16,4 @@ ENCODINGS = ['ascii', 'big5', 'big5hkscs', 'cp037', 'cp1026', 'cp1125',
 
 
 ALGORITHMS = ['sha224', 'sha256', 'sha384', 'sha512', 'sha3_224', 'sha3_256', 'sha3_384',
-              'sha3_512', ]
+              'sha3_512', 'keccak256']

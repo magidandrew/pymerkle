@@ -23,3 +23,5 @@ dist/
 
 # Benchmarks
 *.benchmarks/
+
+venv/

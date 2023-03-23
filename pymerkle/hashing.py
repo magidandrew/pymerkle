@@ -4,7 +4,7 @@ Hashing machinery for data insertion and proof verification
 
 import hashlib
 from pymerkle.constants import ENCODINGS, ALGORITHMS
-
+from sha3 import keccak_256
 
 class UnsupportedParameter(Exception):
     """
@@ -59,7 +59,10 @@ class HashEngine:
         :type buffer: bytes
         :rtype: bytes
         """
-        hasher = getattr(hashlib, self.algorithm)()
+        if self.algorithm == 'keccak256':
+            hasher = keccak_256
+        else:
+            hasher = getattr(hashlib, self.algorithm)()
 
         update = hasher.update
         chunksize = 1024
