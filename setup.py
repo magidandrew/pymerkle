@@ -19,6 +19,8 @@ try:
 except FileNotFoundError:
     install_requires = []
 
+print(f"install requires: {install_requires}")
+
 with open("README.md", 'r') as f:
     long_description = f.read()
 
