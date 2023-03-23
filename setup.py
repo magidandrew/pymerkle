@@ -19,7 +19,6 @@ try:
 except FileNotFoundError:
     install_requires = []
 
-print(f"install requires: {install_requires}")
 
 with open("README.md", 'r') as f:
     long_description = f.read()
@@ -42,7 +41,7 @@ def main():
        author="fmerg",
        author_email="fmerg@protonmail.com",
        python_requires=">=3.6",
-       install_requires=install_requires,
+       install_requires=['pysha3'],
        zip_safe=False,
        keywords=[
            "merkle", "proof", "inclusion", "consistency",
